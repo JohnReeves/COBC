@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Flickr-viewr</string>
+
+    <string name="hello_world">Flickr-view!</string>
+    <string name="img_One">Running Cat!</string>
+
+    <string name="btn_one">Spot!</string>
+    <string name="btn_two">Shot!</string>
+    <string name="btn_three">What!!</string>
+
+    <string name="action_settings">Settings</string>
+
+</resources>
