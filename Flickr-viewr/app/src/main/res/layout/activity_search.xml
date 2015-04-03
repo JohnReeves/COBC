@@ -52,19 +52,20 @@
         android:id="@+id/imgPhoto"
         android:layout_below="@id/lblTitleBar"
         android:contentDescription="@string/imgLocation"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:src="@drawable/image_three"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/image_three_crop_circle"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="110dp"
         android:scaleType="centerCrop"
         />
 
+
     <TextView
         android:text="@string/myOwnName"
         android:layout_alignBottom="@id/imgPhoto"
         android:layout_toRightOf="@id/imgPhoto"
-        android:textSize="36sp"
+        android:textSize="28sp"
         android:textColor="#212121"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -72,6 +73,7 @@
        />
 
     <!--location-->
+
     <!--awesome font pin-->
     <!--TODO pull up Google Maps for Home-->
     <ImageView
@@ -82,7 +84,7 @@
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="60dp"
         />
 
     <TextView
