@@ -1,0 +1,79 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F8BBD0"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    >
+
+    <TextView
+        android:id="@+id/lblTitle"
+        android:text="@string/hello_world"
+        android:textSize="32sp"
+        android:textColor="#E91E63"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+    />
+
+    <ImageView
+        android:id="@+id/imgOne"
+        android:contentDescription="@string/img_One"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:src="@drawable/image_one"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        />
+
+    <Button
+        android:id="@+id/btnLocations"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/btn_one"
+        android:background="#E1BEE7"
+        android:textColor="#9C27B0"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+    />
+
+    <Button
+        android:id="@+id/btnPictures"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/btn_two"
+        android:background="#E1BEE7"
+        android:textColor="#9C27B0"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+    />
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="@string/btn_three"
+        android:background="#E1BEE7"
+        android:textColor="#9C27B0"
+        android:layout_gravity="center_horizontal"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+    />
+
+</LinearLayout>

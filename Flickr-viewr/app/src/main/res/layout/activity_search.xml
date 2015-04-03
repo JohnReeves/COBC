@@ -1,0 +1,182 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#dedede"
+    tools:context="com.example.reeves.flickr_viewr.SearchActivity">
+
+    <!--invisible title bar to anchor the relive layout-->
+    <!--just needs a label-->
+    <TextView
+        android:id="@+id/lblTitleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        />
+
+    <!--colour swatches-->
+    <!--wallpaper plus shadow-->
+    <!--TODO change wallpaper to an image, fill to edges-->
+    <TextView
+        android:id="@+id/lblRedBar"
+        android:layout_below="@id/lblTitleBar"
+        android:layout_width="fill_parent"
+        android:layout_height="150dp"
+        android:background="#d33d2f"
+        />
+
+    <TextView
+        android:id="@+id/lblPinkBar"
+        android:layout_below="@id/lblRedBar"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#c89a98"
+        />
+
+    <TextView
+        android:id="@+id/lblGreyBar"
+        android:layout_below="@id/lblPinkBar"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#bac2c2"
+        />
+
+    <!--photo and name-->
+    <!--cut in half by the wallpaper-->
+    <!--TODO photo in a circle, right justify text-->
+    <ImageView
+        android:id="@+id/imgPhoto"
+        android:layout_below="@id/lblTitleBar"
+        android:contentDescription="@string/imgLocation"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/image_three"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="110dp"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:text="@string/myOwnName"
+        android:layout_alignBottom="@id/imgPhoto"
+        android:layout_toRightOf="@id/imgPhoto"
+        android:textSize="36sp"
+        android:textColor="#212121"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+       />
+
+    <!--location-->
+    <!--awesome font pin-->
+    <!--TODO pull up Google Maps for Home-->
+    <ImageView
+        android:id="@+id/imgLocation"
+        android:layout_below="@id/imgPhoto"
+        android:src="@drawable/icon_location"
+        android:contentDescription="@string/imgLocation"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        />
+
+    <TextView
+        android:text="@string/imgLocation"
+        android:layout_alignTop="@id/imgLocation"
+        android:layout_alignBottom="@id/imgLocation"
+        android:layout_toRightOf="@id/imgLocation"
+        android:textSize="16sp"
+        android:textColor="#212121"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        />
+
+    <!--github-->
+    <!--awesome font octocat-->
+    <!--TODO jump to repos or gists-->
+    <ImageView
+        android:id="@+id/imgGithub"
+        android:layout_below="@id/imgLocation"
+        android:contentDescription="@string/imgWebsite"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/icon_github"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:text="@string/imgGithub"
+        android:layout_alignTop="@id/imgGithub"
+        android:layout_alignBottom="@id/imgGithub"
+        android:layout_toRightOf="@id/imgGithub"
+        android:textSize="16sp"
+        android:textColor="#212121"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        />
+
+    <!--birthday-->
+    <!--awesome font cake-->
+    <!--TODO add to google calendar-->
+    <ImageView
+        android:id="@+id/imgBirthday"
+        android:layout_below="@id/imgGithub"
+        android:src="@drawable/icon_birthday"
+        android:contentDescription="@string/imgWebsite"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:text="@string/imgBirthday"
+        android:layout_alignTop="@id/imgBirthday"
+        android:layout_alignBottom="@id/imgBirthday"
+        android:layout_toRightOf="@id/imgBirthday"
+        android:textSize="16sp"
+        android:textColor="#212121"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        />
+
+    <!--website-->
+    <!--awesome font octocat-->
+    <!--TODO jump to website (make a website too)-->
+    <ImageView
+        android:id="@+id/imgWebsite"
+        android:src="@drawable/icon_website"
+        android:layout_below="@id/imgBirthday"
+        android:contentDescription="@string/imgWebsite"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:text="@string/imgWebsite"
+        android:layout_alignTop="@id/imgWebsite"
+        android:layout_alignBottom="@id/imgWebsite"
+        android:layout_toRightOf="@id/imgWebsite"
+        android:textSize="16sp"
+        android:textColor="#212121"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        />
+
+</RelativeLayout>

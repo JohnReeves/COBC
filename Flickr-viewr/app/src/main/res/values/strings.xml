@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Flickr-viewr</string>
+
+    <string name="hello_world">Flickr-view!</string>
+    <string name="img_One">Running Cat!</string>
+
+    <string name="btn_one">Spot!</string>
+    <string name="btn_two">Shot!</string>
+    <string name="btn_three">What!!</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_search">SearchActivity</string>
+
+    <string name="myOwnName">John Reeves</string>
+    <string name="imgLocation">Paragon, Bath</string>
+    <string name="imgGithub">JohnReeves</string>
+    <string name="imgBirthday">13th Feb</string>
+    <string name="imgWebsite">www.teachprogramming.co.uk</string>
+
+</resources>
